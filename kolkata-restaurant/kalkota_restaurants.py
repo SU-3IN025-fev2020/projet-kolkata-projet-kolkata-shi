@@ -1,5 +1,5 @@
 # -*- coding: utf-8 -*-
-
+ 
 # Nicolas, 2020-03-20
 
 from __future__ import absolute_import, print_function, unicode_literals
