@@ -20,12 +20,12 @@ from collisions2 import CollisionHandler2
 def check_init_game_done(fun):
     """ decorator checking if init() has correctly been called before anything """
     @wraps(fun)
-    def fun_checked(*args,**kwargs):
+    def fun_checked(*args, **kwargs):
         try:
             Game.single_instance.screen
         except:
             raise Exception('Vous devez appeler la fonction init() avant toute chose')
-        return fun(*args,**kwargs)
+        return fun(*args, **kwargs)
     return fun_checked
 
 
